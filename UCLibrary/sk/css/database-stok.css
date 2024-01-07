@@ -1,0 +1,20 @@
+.uc-section {
+    width: 100%;
+}
+
+span.uc-table-header-data-id,
+span.uc-table-row-data-id {
+    width: 5%;
+}
+span.uc-table-header-data-name,
+span.uc-table-row-data-name {
+    width: 65%;
+}
+span.uc-table-header-data-type,
+span.uc-table-row-data-type {
+    width: 30%;
+}
+
+.uc-table-row-red {
+  background-color: lightcoral;
+}

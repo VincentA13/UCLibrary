@@ -1,0 +1,411 @@
+html, body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #a092b0;
+  font-size: 24px;
+  font-family:'Times New Roman', Times, serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  font-family:'Times New Roman', Times, serif;
+}
+
+header.uc-header {
+  position: sticky;
+  width: 65vw;
+  padding: 1rem;
+  box-sizing: border-box;
+  background-color: #cecece;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  z-index: 100;
+}
+header.uc-header .uc-header-title {
+  position: relative;
+  font-size: 2rem;
+  color: #fff;
+  text-shadow: 0px 0px 5px #000;
+}
+
+header.uc-header .uc-header-subtitle {
+  position: relative;
+  font-size: 1rem;
+  color: #fff;
+  text-shadow: 0px 0px 2px #000;
+}
+header.uc-header a.uc-header-home {
+  position: absolute;
+  right: 1rem;
+  top: calc(50% - 1rem);
+  height: 2rem;
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: #fff;
+  color: #000;
+  padding: 0 1rem;
+  border: 2px solid #000;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 70px;
+}
+header.uc-header a.uc-header-home {
+    position: absolute;
+    top: calc(50% - 1rem);
+    height: 2rem;
+    font-size: 1rem;
+    text-decoration: none;
+    background-color: #fff;
+    color: #000;
+    padding: 0 1rem;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 8rem; /* Adjust the positioning for HOME button */
+}
+
+header.uc-header a#printButton {
+    position: absolute;
+    top: calc(50% - 1rem);
+    height: 2rem;
+    font-size: 1rem;
+    text-decoration: none;
+    background-color: #fff;
+    color: #000;
+    padding: 0 1rem;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 2rem;
+    background-color: #7FFF00;
+}
+
+main.uc-body {
+  position: relative;
+  width: 65vw;
+  background-color: #dedede;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  gap: 1rem;
+}
+
+main.uc-body-scroll {
+  position: relative;
+  width: 65vw;
+  background-color: #dedede;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  gap: 1rem;
+  padding-top: 700px;
+}
+
+main.uc-body-scroll2 {
+  position: relative;
+  width: 65vw;
+  background-color: #dedede;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  gap: 1rem;
+  padding-top: 700px;
+}
+
+a.uc-button-navigation {
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background-color: #000;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding-left:7px;
+}
+
+a.uc-button-navigation span.uc-button-navigation-name {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-size: 3rem;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+a.uc-button-navigation span.uc-button-navigation-icon {
+  position: relative;
+  width: 3rem;
+  aspect-ratio: 1 / 1;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+a.uc-button-navigation span.uc-button-navigation-icon + span.uc-button-navigation-name {
+  width: auto;
+  text-align: left;
+  flex-shrink: 1;
+}
+
+.uc-form-field {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.uc-form-field label.uc-form-label {
+  position: relative;
+  font-size: 1rem;
+  color: #fff;
+  text-shadow: 0px 0px 2px #000;
+}
+.uc-form-field input.uc-form-input {
+  position: relative;
+  width: 100%;
+  height: 2rem;
+  border: 2px solid #000;
+  background-color: #fff;
+  font-size: 1rem;
+  padding: 0 0.5rem;
+  box-sizing: border-box;
+}
+.uc-form-row button.uc-form-button {
+  cursor: pointer;
+  position: relative;
+  padding: 0 0.5rem;
+  border: 2px solid #fff;
+  color: #fff;
+  text-shadow: 0px 0px 2px #000;
+  font-size: 2rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.uc-form-row button.uc-form-button.uc-form-button-submit {
+  background-color: green;
+}
+.uc-form-row button.uc-form-button.uc-form-button-cancel {
+  background-color: red;
+  padding-left:17px;
+  padding-right:17px;
+
+}
+
+a.uc-button-navigation-temp {
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background-color: #000;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding-left:7px;
+  padding-top: 1cm;
+  padding-bottom:1cm;
+  margin-bottom: 110px;
+  margin-top: 110px;
+}
+
+a.uc-button-navigation-temp span.uc-button-navigation-name {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-size: 3rem;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+a.uc-button-navigation-temp span.uc-button-navigation-icon {
+  position: relative;
+  width: 3rem;
+  aspect-ratio: 1 / 1;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+a.uc-button-navigation-temp span.uc-button-navigation-icon + span.uc-button-navigation-name {
+  width: auto;
+  text-align: left;
+  flex-shrink: 1;
+}
+.table-container {
+    max-height: 20px; /* Set the maximum height you want */
+    overflow-y: auto;
+}
+.uc-table {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.uc-table .uc-table-header {
+    position: relative;
+    width: 100%;
+    height: 1rem;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+.uc-table .uc-table-header span.uc-table-header-data {
+    position: relative;
+    height: 100%;
+    padding: 0 0.25rem;
+    border-left: 1px solid black;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+.uc-table .uc-table-header span.uc-table-header-data:last-child {
+    border-right: 1px solid black;
+}
+.uc-table .uc-table-body .uc-table-row {
+    position: relative;
+    width: 100%;
+    height: 1rem;
+    background: white;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+.uc-table .uc-table-body .uc-table-row span.uc-table-row-data {
+    pointer-events: none;
+    position: relative;
+    height: 100%;
+    padding: 0 0.25rem;
+    border-left: 1px solid black;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+.uc-table .uc-table-body .uc-table-row span.uc-table-row-data:last-child {
+    border-right: 1px solid black;
+}
+header.uc-header-opname {
+  position: relative;
+  width: 65vw;
+  padding: 1rem;
+  box-sizing: border-box;
+  background-color: #cecece;
+  display: flex;
+  flex-direction: column;
+}
+header.uc-header-opname .uc-header-title {
+  position: relative;
+  font-size: 2rem;
+  color: #1EFF16;
+  text-shadow: 0px 0px 5px #000;
+}
+
+header.uc-header-opname .uc-header-subtitle {
+  position: relative;
+  font-size: 1rem;
+  color: #fff;
+  text-shadow: 0px 0px 2px #000;
+}
+header.uc-header-opname a.uc-header-home {
+  position: absolute;
+  right: 1rem;
+  top: calc(50% - 1rem);
+  height: 2rem;
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: #fff;
+  color: #000;
+  padding: 0 1rem;
+  border: 2px solid #000;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a.uc-button-navigation2 {
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background-color: #000;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+a.uc-button-navigation2 span.uc-button-navigation-name {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-size: 60px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top:25px;
+  padding-bottom:25px;
+}
+a.uc-button-navigation2 span.uc-button-navigation-icon {
+  position: relative;
+  width: 3rem;
+  aspect-ratio: 1 / 1;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+a.uc-button-navigation2 span.uc-button-navigation-icon + span.uc-button-navigation-name {
+  width: auto;
+  text-align: left;
+  flex-shrink: 1;
+}
+.uc-search-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adjust the gap as needed */
+}
+
+#searchInput {
+  width: 100%;
+  padding: 5px;
+  /* Your other input styles */
+}
+
+#clearButton {
+  background-color: #ccc;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+
+}
+.print-title {
+    display: none;
+}
+.print-title-riwayat {
+    display: none;
+}

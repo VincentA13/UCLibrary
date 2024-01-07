@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/Trans-input.css">
+</head>
+<body>
+  <header class="uc-header">
+    <span class="uc-header-title">RETURNING BOOK</span>
+    <a href="./index.html" class="uc-header-home">HOME</a>
+  </header>
+  <main class="uc-body uc-body-items-input">
+    <form class="uc-form">
+      <div class="uc-section">
+        <div class="uc-form-field">
+          <label for="BName" class="uc-form-label">Nama Peminjam</label>
+          <input id="BName" type="text" class="uc-form-input">
+        </div>
+        <div class="uc-form-field">
+          <label for="Borrow_ID" class="uc-form-label">Borrow ID</label>
+          <input id="Borrow_ID" type="number" class="uc-form-input">
+        </div>
+      </div>
+      <div class="uc-section">
+        <div class="uc-form-field">
+          <label for="RDate" class="uc-form-label">Return Date</label>
+          <input id="RDate" type="date" class="uc-form-input">
+        </div>
+        <div class="uc-form-row">
+          <button class="uc-form-button uc-form-button-submit">Return</button>
+          <button class="uc-form-button uc-form-button-cancel">Cancel</button>
+        </div>
+      </div>
+    </form>
+  </main>
+  <script src="./js/return_in.js"></script>
+  <script src="./js/return_input.js"></script>
+</body>
+</html>
