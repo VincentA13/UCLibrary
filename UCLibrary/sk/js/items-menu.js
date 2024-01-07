@@ -34,5 +34,5 @@ async function loadStock() {
 
 function clickHandler(id) {
   localStorage.setItem('item-edit-id', id);
-  window.location.href = './change_trans.html';
+  window.location.href = './BorrowConfirm.html';
 }
